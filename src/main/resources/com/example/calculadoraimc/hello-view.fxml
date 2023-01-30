@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.calculadoraimc.HelloController">
     <padding>
@@ -18,14 +19,14 @@
         <Image url="https://play-lh.googleusercontent.com/t-3c75ddwdrvyMeDZu7EGgbq-fFxJSZLWNt69wvD-KS-rYm7RqTMNECue03yoA8X8xIq"/>
     </ImageView>
     <HBox alignment="CENTER">
-        <Label>Pes</Label>
+        <Text text="Pes: "/>
         <TextField fx:id="pes"/>
-        <Label> Kg</Label>
+        <Text text=" Kg"/>
     </HBox >
     <HBox alignment="CENTER">
-        <Label>Altura</Label>
+        <Text text="Altura: "/>
         <TextField fx:id="altura"/>
-        <Label> cm</Label>
+        <Text text=" cm"/>
     </HBox>
 
     <Button text="Calcular" onAction="#calculate"/>
